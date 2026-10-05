@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.Projek_Sherine.R
 import com.example.Projek_Sherine.databinding.ActivityMainBinding
+import com.example.Projek_Sherine.pertemuan_5.LimaActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
@@ -44,6 +45,9 @@ class MainActivity : AppCompatActivity() {
 
                     dialog.dismiss()
                 }.setCancelable(false).show()
+        }
+        binding.btntolima.setOnClickListener {
+            startActivity(Intent(this, LimaActivity::class.java))
         }
     }
 }
