@@ -3,13 +3,13 @@
 }
 
 android {
-    namespace = "com.example.Projek_Sherine"
+    namespace = "com.example.Projek_iki"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.Projek_Sherine"
+        applicationId = "com.example.Projek_iki"
         minSdk = 29
         targetSdk = 37
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.example.Projek_Sherine.pertemuan_5
+package com.example.Projek_iki.pertemuan_5
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,10 +9,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.Projek_Sherine.R
-import com.example.Projek_Sherine.databinding.ActivityDetailBinding
-import com.example.Projek_Sherine.databinding.ActivityLimaBinding
-import com.example.Projek_Sherine.databinding.ActivityLoginBinding
+import com.example.Projek_iki.R
+import com.example.Projek_iki.databinding.ActivityLimaBinding
 
 class LimaActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLimaBinding

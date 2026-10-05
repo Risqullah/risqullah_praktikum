@@ -1,4 +1,4 @@
-package com.example.Projek_Sherine
+package com.example.Projek_iki
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
