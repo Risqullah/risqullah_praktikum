@@ -22,7 +22,7 @@
         android:id="@+id/imageView13"
         android:layout_width="440dp"
         android:layout_height="287dp"
-        android:layout_marginStart="72dp"
+        android:layout_marginStart="68dp"
         android:rotation="-180"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,20 +116,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDetail"
-        app:layout_constraintVertical_bias="0.266" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Logout"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="#AD0000"
+        android:text="Logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btntoenam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pertemuan 6"
+        android:backgroundTint="#F80000"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btntolima"
-        app:layout_constraintVertical_bias="0.161" />
+        app:layout_constraintTop_toBottomOf="@+id/btntolima" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

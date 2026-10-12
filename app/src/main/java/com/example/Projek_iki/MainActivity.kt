@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.Projek_iki.databinding.ActivityMainBinding
 import com.example.Projek_iki.pertemuan_5.LimaActivity
+import com.example.Projek_iki.pertemuan_6.EnamActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -66,6 +67,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 .setNegativeButton("Batal") { dialog, _ -> dialog.dismiss() }
                 .show()
+        }
+        binding.btntoenam.setOnClickListener {
+            startActivity(Intent(this, EnamActivity::class.java))
         }
     }
 }
