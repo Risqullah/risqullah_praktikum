@@ -7,13 +7,10 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.lifecycle.lifecycleScope
 import com.example.Projek_iki.databinding.ActivityMainBinding
-import com.example.Projek_iki.pertemuan_5.LimaActivity
-import com.example.Projek_iki.pertemuan_6.EnamActivity
+import com.example.Projek_iki.Home.pertemuan_5.LimaActivity
+import com.example.Projek_iki.Home.pertemuan_6.EnamActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

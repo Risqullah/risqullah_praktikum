@@ -9,6 +9,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.Projek_iki.Home.HomeFragment
 import com.example.Projek_iki.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -57,7 +58,7 @@ class LoginActivity : AppCompatActivity() {
                 editor.putString("username", user)
                 editor.apply()
 
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, BaseActivity::class.java))
                 finish()
 
             } else {
