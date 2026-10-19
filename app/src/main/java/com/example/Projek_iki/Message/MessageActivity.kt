@@ -1,0 +1,35 @@
+package com.example.Projek_iki.Message
+
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.example.Projek_iki.R
+import com.example.Projek_iki.databinding.ActivityBaseBinding
+import com.example.Projek_iki.databinding.ActivityDetailBinding
+import com.example.Projek_iki.databinding.ActivityLoginBinding
+import com.example.Projek_iki.databinding.ActivityMessageBinding
+
+class MessageActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMessageBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+
+        binding = ActivityMessageBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+        val sender = intent.getStringExtra("SENDER")
+        val message = intent.getStringExtra("MESSAGE")
+
+        binding.txtSenderName.text = sender
+        binding.txtSenderMessage.text = message
+    }
+}
