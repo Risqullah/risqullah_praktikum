@@ -21,51 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="#FF0000"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:subtitleTextColor="@android:color/white"
         app:titleTextColor="@android:color/white" />
-
-    <!--    <ImageView-->
-    <!--        android:id="@+id/imageView12"-->
-    <!--        android:layout_width="452dp"-->
-    <!--        android:layout_height="239dp"-->
-    <!--        android:layout_marginEnd="92dp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.0"-->
-    <!--        app:srcCompat="@drawable/red" />-->
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="440dp"
-        android:layout_height="287dp"
-        android:layout_marginStart="76dp"
-        android:rotation="-180"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/red" />
-
-    <TextView
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="84dp"
-        android:fontFamily="@font/cinzel_regular"
-        android:text="Password"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
     <TextView
         android:id="@+id/textView5"
@@ -73,24 +33,12 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/cinzel_bold"
         android:text="[ confidential ]"
-        android:textSize="35dp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.282" />
-
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/cinzel_regular"
-        android:text="Username"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
 
     <TextView
         android:id="@+id/txtUsername"
@@ -105,6 +53,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cinzel_regular"
+        android:text="Username"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
+
+    <TextView
         android:id="@+id/txtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -113,9 +72,19 @@
         android:text="Password Information"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cinzel_regular"
+        android:text="Password"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridMenu"
@@ -124,72 +93,54 @@
         android:padding="16dp"
         app:columnCount="3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:useDefaultMargins="true">
 
         <Button
             android:id="@+id/btnDetail"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
             android:backgroundTint="@color/button"
             android:fontFamily="@font/godofwar"
             android:text="Detail >"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.206"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/password" />
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
 
         <Button
             android:id="@+id/btntolima"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Pertemuan 5"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.56"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnDetail"
-            app:layout_constraintVertical_bias="0.155" />
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
 
         <Button
             android:id="@+id/btnLogout"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="28dp"
             android:backgroundTint="#AD0000"
             android:text="Logout"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.547"
-            app:layout_constraintStart_toStartOf="parent" />
-
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
 
         <Button
             android:id="@+id/btntoenam"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#F80000"
             android:text="Pertemuan 6"
-            app:layout_constraintBottom_toTopOf="@+id/btnLogout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.56"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btntolima"
-            app:layout_constraintVertical_bias="0.392" />
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
 
         <Button
             android:id="@+id/btntosembilan"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Pertemuan 9"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.407"
-            app:layout_constraintStart_toEndOf="@+id/btnDetail"
-            app:layout_constraintTop_toBottomOf="@+id/password"
-            app:layout_constraintVertical_bias="0.164" />
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
     </androidx.gridlayout.widget.GridLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

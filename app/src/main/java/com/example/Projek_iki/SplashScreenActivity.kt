@@ -21,7 +21,7 @@ class SplashScreenActivity : AppCompatActivity() {
             val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
             val isLogin = sharedPref.getBoolean("isLogin", false)
             val target = if (isLogin) BaseActivity::class.java else LoginActivity::class.java
-            startActivity(Intent(this@SplashScreenActivity, target))
+            startActivity(Intent(this@SplashScreenActivity, TutorialScreenActivity::class.java))
             finish()
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
