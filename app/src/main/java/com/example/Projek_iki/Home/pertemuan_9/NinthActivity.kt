@@ -1,6 +1,7 @@
 package com.example.Projek_iki.Home.pertemuan_9
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +21,6 @@ class NinthActivity : AppCompatActivity() {
 
         binding = ActivityNinthBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setContentView(R.layout.activity_ninth)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -41,6 +41,17 @@ class NinthActivity : AppCompatActivity() {
                 Toast.makeText(this, "Filter: ${chip.text}", Toast.LENGTH_SHORT).show()
 // Lakukan logika filter di sini
             }
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressedDispatcher.onBackPressed()
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }

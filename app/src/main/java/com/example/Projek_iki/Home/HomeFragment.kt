@@ -14,6 +14,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.Projek_iki.DetailActivity
+import com.example.Projek_iki.Home.pertemuan_10.TenthActivity
 import com.example.Projek_iki.Home.pertemuan_5.LimaActivity
 import com.example.Projek_iki.Home.pertemuan_6.EnamActivity
 import com.example.Projek_iki.Home.pertemuan_9.NinthActivity
@@ -68,6 +69,9 @@ class HomeFragment : Fragment() {
         }
         binding.btntosembilan.setOnClickListener {
             startActivity(Intent(requireContext(), NinthActivity::class.java))
+        }
+        binding.btntotenth.setOnClickListener {
+            startActivity(Intent(requireContext(), TenthActivity::class.java))
         }
         binding.btnLogout.setOnClickListener {
 

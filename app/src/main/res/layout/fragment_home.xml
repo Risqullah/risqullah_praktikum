@@ -112,6 +112,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Pertemuan 5"
+            android:backgroundTint="#F44336"
             app:layout_columnWeight="1"
             app:layout_gravity="fill_horizontal" />
 
@@ -138,6 +139,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Pertemuan 9"
+            android:backgroundTint="#F44336"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/btntotenth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan 10"
+            android:backgroundTint="#F44336"
             app:layout_columnWeight="1"
             app:layout_gravity="fill_horizontal" />
 
