@@ -8,7 +8,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.Projek_iki.R
-import com.example.Projek_iki.databinding.ActivityNinthBinding
+//import com.example.Projek_iki.databinding.ActivityNinthBinding
 import com.example.Projek_iki.databinding.ActivityTenthBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
