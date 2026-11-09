@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.Projek_iki.R
 import com.example.Projek_iki.databinding.FragmentTabCBinding
 
@@ -48,7 +49,8 @@ class TabCFragment : Fragment() {
             ).show()
         }
         binding.rvProducts.apply {
-            layoutManager = GridLayoutManager(requireContext(), 2)
+            //layoutManager = GridLayoutManager(requireContext(), 2)
+            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,false)
             adapter = productAdapter
         }
     }
