@@ -11,22 +11,45 @@ import com.example.Projek_iki.data.entity.NoteEntity
 
 @Database(
     entities = [NoteEntity::class],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 
 abstract class AppDatabase : RoomDatabase() {
+
     abstract fun noteDao(): NoteDao
+
     companion object {
+
         @Volatile
         private var INSTANCE: AppDatabase? = null
+
+        // Migrasi database versi 1 ke versi 2
+        private val MIGRATION_1_2 = object : Migration(1, 2) {
+
+            override fun migrate(db: SupportSQLiteDatabase) {
+
+                db.execSQL(
+                    "ALTER TABLE notes " +
+                            "ADD COLUMN isPinned INTEGER NOT NULL DEFAULT 0"
+                )
+
+            }
+        }
+
         fun getInstance(context: Context): AppDatabase =
             INSTANCE ?: synchronized(this) {
+
                 INSTANCE ?: Room.databaseBuilder(
                     context.applicationContext,
                     AppDatabase::class.java,
                     "app_database"
-                ).build().also { INSTANCE = it }
+                )
+                    .addMigrations(MIGRATION_1_2)
+                    .build()
+                    .also {
+                        INSTANCE = it
+                    }
             }
     }
 }

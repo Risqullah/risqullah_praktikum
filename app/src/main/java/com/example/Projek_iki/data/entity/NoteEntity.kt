@@ -11,6 +11,7 @@ data class NoteEntity(
     val title: String,
     val content: String,
     val createdAt: Long = System.currentTimeMillis(),
+
     @ColumnInfo(defaultValue = "0")
     val isPinned: Boolean = false
 )
