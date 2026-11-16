@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.Projek_iki.Home.HomeFragment
 import com.example.Projek_iki.Message.MessageFragment
 import com.example.Projek_iki.More.MoreFragment
+import com.example.Projek_iki.data.Note.NoteFragment
 import com.example.Projek_iki.databinding.ActivityBaseBinding
 import com.example.Projek_iki.databinding.ActivityDetailBinding
 
@@ -46,6 +47,11 @@ class BaseActivity : AppCompatActivity() {
                 R.id.more -> {
                     Toast.makeText(this, "More Clicked", Toast.LENGTH_SHORT).show()
                     replaceFragment(MoreFragment())
+                    true
+                }
+                R.id.note -> {
+                    Toast.makeText(this, "More Clicked", Toast.LENGTH_SHORT).show()
+                    replaceFragment(NoteFragment())
                     true
                 }
 
